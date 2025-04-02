@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task1.
+       // take a prompt convert to Uppercase
+       let a=prompt("enter your first name")
+       console.log(a.toUpperCase())
+       //task 2
+       //take a prompt convert to lower case
+       let str=prompt("enter your last name")
+       str.toLowerCase()
+       console.log(str)
+       //task3
+       //take prompt and reverse a string
+       let str1=prompt("enter a string to reverse")
+       console.log(str1.split(" ").reverse().join(" "))
+       //task4
+       //take a prompt count the vowels
+       let str2=prompt("enter your name")
+       console.log(str2.match(/[aeiou]/ig))
+       //advanced tasks
+       let str3=prompt("enter a user name")
+      console.log(str3.length)
+       let length=str3.length
+      if(length>=5 && length<=15){
+       console.log("username valid")
+      }
+       else{
+        console.log("username is not valid")
+       }
+       //TASK-2 Email formatter
+       let First_name=prompt("enter your first_name")
+       let Last_name=prompt("enter your last_name")
+       console.log(First_name.concat(".",Last_name,"@gmail.com"))
+       //tASK-3 word counter
+       let word_counter=prompt("enter any sentence")
+       count=word_counter.split(" ")
+      console.log("The word count for above sentence is:",count.length)
+    //task-4 Palindrome checker
+    input=prompt("enter any string")
+    check= input.split(" ").reverse().join("")
+    console.log(check)
+    if(input==check)
+   {
+    console.log("given string is palindrome")
+   }
+   else
+   {
+    console.log("given string is not a palindrome")
+   }
+
+    </script>
+</body>
+</html>
